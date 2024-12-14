@@ -1,0 +1,265 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 1rem 2rem;
+    color: white;
+}
+
+nav .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #FFD700;
+}
+
+/* Active link styles */
+nav .nav-links a.active {
+    color: #ffffff; /* Change color for active link */
+    font-weight: bold; /* Optional: makes the active link bold */
+}
+/* Hero Section */
+header.hero {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #4CAF50, #87CEEB);
+    color: white;
+}
+
+header.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.responsive-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* About Section */
+.about {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #4CAF50;
+    margin-bottom: 1.5rem;
+}
+
+.about article {
+    margin-bottom: 2rem;
+}
+
+.about article h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #333;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 0.5rem;
+}
+
+.about article p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.about article ul {
+    list-style-type: disc;
+    margin-left: 2rem;
+    margin-top: 1rem;
+}
+
+.about article ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    color: #555;
+}
+
+.about article ul li strong {
+    color: #4CAF50;
+}
+
+/* Call-to-Action Section */
+.about article:last-of-type p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #4CAF50;
+    font-weight: bold;
+}
+/* Contact Section */
+section.contact {
+    padding: 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+section.contact h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #4CAF50;
+}
+
+section.contact form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section.contact form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+section.contact form input,
+section.contact form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+section.contact form input:focus,
+section.contact form textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+section.contact form button {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+section.contact form button:hover {
+    background-color: #45a049;
+}
+/* Products Section */
+.products {
+    padding: 3rem 1.5rem;
+    text-align: center;
+    background-color: #fff;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.products h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #4CAF50;
+}
+
+.products ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.products ul li {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #333;
+    transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.products ul li:hover {
+    color: #4CAF50;
+    transform: translateX(10px);
+}
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 0.9rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    header.hero h1 {
+        font-size: 2rem;
+    }
+
+    header.hero p {
+        font-size: 1rem;
+    }
+     .about {
+        padding: 1.5rem;
+    }
+
+    .about h2 {
+        font-size: 2rem;
+    }
+
+    .about article h3 {
+        font-size: 1.5rem;
+    }
+      .products h2 {
+        font-size: 2rem;
+    }
+      section.contact h2 {
+        font-size: 2rem;
+    }
+}
